@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte - Tecnologia e Produtividade para o Campo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <div class="acc-buttons">
+                <button id="btn-increase-text" aria-label="Aumentar tamanho do texto">A+</button>
+                <button id="btn-decrease-text" aria-label="Diminuir tamanho do texto">A-</button>
+                <button id="btn-toggle-contrast" aria-label="Alternar alto contraste"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-seedling icon"></i> <span>Agro<strong>Forte</strong></span>
+            </div>
+            <a href="#cta-section" class="btn btn-secondary">Falar com Consultor</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Tecnologia de Cultivo Avançada</span>
+                <h1>Transforme a Produtividade da Sua Lavoura no Próximo Ciclo</h1>
+                <p>Maximize sua colheita e reduza o desperdício de insumos com o sistema de monitoramento inteligente feito para o produtor rural brasileiro.</p>
+                <div class="hero-actions">
+                    <a href="#cta-section" class="btn btn-primary">Garantir Diagnóstico Gratuito</a>
+                </div>
+                <div class="hero-trust">
+                    <p><i class="fa-solid fa-shield-halved icon"></i> Mais de 1.200 propriedades transformadas em todo o país.</p>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <div class="image-overlay"></div>
+                <div class="image-badge"><i class="fa-solid fa-chart-line icon"></i> +34% de Produtividade Média</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Por que a Tecnologia AgroForte é o Futuro da Sua Terra?</h2>
+                <p>Resultados reais, sem complicações, direto no seu celular ou tablet.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-droplet icon"></i></div>
+                    <h3>Economia de Insumos</h3>
+                    <p>Aplique água e fertilizantes na quantidade exata que o solo precisa, evitando desperdícios e cortando custos em até 25%.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-cloud-sun-rain icon"></i></div>
+                    <h3>Previsibilidade Climática</h3>
+                    <p>Alertas em tempo real sobre mudanças no clima diretamente na sua região, permitindo planejar o plantio e a colheita com segurança.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fa-solid fa-mobile-screen-button icon"></i></div>
+                    <h3>Gestão na Palma da Mão</h3>
+                    <p>Aplicativo simples e fácil de usar, feito sob medida para o dia a dia no campo, funcionando mesmo sem internet constante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quem Usa, Confia e Colhe Resultados</h2>
+                <p>Histórias reais de produtores que mudaram o rumo do seu negócio familiar.</p>
+            </div>
+            <div class="carousel-container">
+                <div id="carousel-track" class="carousel-track">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" aria-label="Depoimento anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="carousel-next" aria-label="Próximo depoimento"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dúvidas Frequentes dos Produtores</h2>
+                <p>Tudo o que você precisa saber para tomar a melhor decisão para sua fazenda.</p>
+            </div>
+            <div id="faq-accordion" class="accordion">
+                </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta-section">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Pronto para Multiplicar os Resultados da Sua Próxima Safra?</h2>
+                <p>Preencha os campos ao lado e receba o contato de um engenheiro agrônomo especialista para analisar a sua propriedade sem custo.</p>
+                <div class="cta-guarantee">
+                    <i class="fa-solid fa-lock icon"></i> Seus dados estão 100% seguros e protegidos.
+                </div>
+            </div>
+            <div class="cta-form-wrapper">
+                <form id="lead-form" class="cta-form" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe entrará em contato.');">
+                    <div class="form-group">
+                        <label for="name">Seu Nome Completo</label>
+                        <input type="text" id="name" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone / WhatsApp</label>
+                        <input type="tel" id="phone" required placeholder="Ex: (11) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label for="hectares">Tamanho da Propriedade (Hectares)</label>
+                        <input type="number" id="hectares" required placeholder="Ex: 150">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Quero Meu Diagnóstico Gratuito</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="logo">
+                <i class="fa-solid fa-seedling icon"></i> <span>Agro<strong>Forte</strong></span>
+            </div>
+            <p>&copy; 2026 AgroForte Tecnologia Agrícola Ltda. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
